@@ -1,0 +1,2 @@
+# build_site.js 가 만드는 결과 폴더 (Netlify가 배포할 때 새로 만듭니다)
+dist/

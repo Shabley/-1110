@@ -1,0 +1,15 @@
+# Netlify 배포 설정
+[build]
+  command = "node build_site.js"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # 공개 주소가 정해지면 여기 또는 Netlify 화면의 환경변수에 넣어도 됩니다. (끝에 / 없이)
+  # SITE_URL = "https://실제주소"
+
+# 관리자 화면은 검색에 나오지 않도록
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

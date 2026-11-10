@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+# 관리자(글쓰기) 화면은 검색에 나오지 않도록 합니다
+Disallow: /admin/
+
+# 공개 주소가 정해지면 build_site.js 맨 위의 SITE_URL 한 곳만 바꾸면
+# dist 폴더 안의 이 주소도 자동으로 바뀝니다
+Sitemap: https://your-domain.kr/sitemap.xml
